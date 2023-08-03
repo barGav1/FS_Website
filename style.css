@@ -1,0 +1,82 @@
+body{
+  background-color:#f8f9fa;
+}
+.gradient-background {
+    background: linear-gradient(300deg, #B0E0E6, #E6E6FA, #98FB98);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  h1{
+    font-family: "Tektur", sans-serif;
+    
+  }
+  p{
+    font-family: "Lato", sans-serif;
+  }
+  .blue{
+    color:#91C8E4 !important;
+    letter-spacing:10px;
+  }
+  .Profile{
+    margin:20px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .flexrow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .roundImg{
+    height: 200px;
+    width: 300px;
+    padding-bottom: 50px;
+  }
+  #Udacity{
+    padding-bottom: 10px;
+  }
+  .carousel-inner {
+    max-height: 400px;
+    max-width: 700px;
+  }
+  .project-img{
+  
+    height: 400px;
+    width: 700px;
+  }
+  @media (max-width: 768px) {
+    .flexrow{
+      flex-direction: column;
+    }
+    .carousel-inner {
+      max-height: 300px;
+      max-width: 500px;
+    }
+    .project-img{
+    
+      height: 300px;
+      width: 500px;
+    }
+  }
